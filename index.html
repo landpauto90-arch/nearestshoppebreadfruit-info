@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breadfruit (Artocarpus altilis)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Main Content Area -->
+        <main>
+            <header>
+                <h1>BREADFRUIT</h1>
+                <p class="scientific">Artocarpus altilis</p>
+                <p class="intro">A nutritious, versatile fruit that has nourished island communities for generations.</p>
+            </header>
+
+            <section class="features">
+                <ul>
+                    <li>🌱 Tropical tree</li>
+                    <li>🌵 Drought tolerant</li>
+                    <li>♻️ Sustainable food source</li>
+                    <li>🌍 Feeds millions around the world</li>
+                </ul>
+            </section>
+
+            <div class="hero-image">
+                <img src="breadfruit-main.jpg" alt="Mature breadfruit on a tree">
+            </div>
+
+            <!-- Lifecycle Gallery -->
+            <section class="gallery">
+                <h3>FROM TREE TO TABLE</h3>
+                <div class="gallery-grid">
+                    <figure><img src="flower.jpg" alt="Flower"> <figcaption>1. FLOWER</figcaption></figure>
+                    <figure><img src="young.jpg" alt="Young fruit"> <figcaption>2. YOUNG FRUIT</figcaption></figure>
+                    <figure><img src="mature.jpg" alt="Mature fruit"> <figcaption>3. MATURE FRUIT</figcaption></figure>
+                    <figure><img src="harvested.jpg" alt="Harvested"> <figcaption>4. HARVESTED</figcaption></figure>
+                </div>
+            </section>
+        </main>
+
+        <!-- Sidebar Area -->
+        <aside>
+            <section class="about">
+                <h3>ABOUT BREADFRUIT</h3>
+                <p>Breadfruit is a tropical tree native to the Pacific Islands. It can be cooked in many ways—boiled, baked, roasted, or fried—and has a mild flavor similar to bread, potato, or freshly baked bread.</p>
+            </section>
+
+            <section class="nutrition">
+                <h3>NUTRITION (Per 100g cooked)</h3>
+                <table>
+                    <tr><td>Calories</td><td>103 kcal</td></tr>
+                    <tr><td>Carbohydrates</td><td>27.1 g</td></tr>
+                    <tr><td>Protein</td><td>1.1 g</td></tr>
+                    <tr><td>Fat</td><td>0.3 g</td></tr>
+                    <tr><td>Dietary Fiber</td><td>4.0 g</td></tr>
+                </table>
+            </section>
+
+            <!-- Cooking Gallery -->
+            <section class="cooking">
+                <h3>DELICIOUS & VERSATILE</h3>
+                <div class="cooking-grid">
+                    <img src="boiled.jpg" alt="Boiled">
+                    <img src="roasted.jpg" alt="Roasted">
+                    <img src="fried.jpg" alt="Fried">
+                    <img src="mashed.jpg" alt="Mashed">
+                </div>
+            </section>
+        </aside>
+    </div>
+</body>
+</html>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f0; /* Light beige background */
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr; /* Two column layout */
+    gap: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+header {
+    background-color: #1a2f23; /* Dark green from image */
+    color: white;
+    padding: 30px;
+    border-radius: 8px 8px 0 0;
+}
+
+h1 { font-size: 3rem; margin: 0; }
+.scientific { font-style: italic; color: #a5c663; }
+
+.features ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.hero-image img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.nutrition table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.nutrition td {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+.gallery-grid, .cooking-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.gallery-grid img, .cooking-grid img {
+    width: 100%;
+    border-radius: 4px;
+}
